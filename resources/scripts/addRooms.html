@@ -1,0 +1,23 @@
+<html>
+<input type="text" id="id" placeholder="ID"></input>
+<input type="text" id="filename" placeholder="Filename"></input>
+<input type="text" id="dispname" placeholder="Displayname"></input>
+<input type="text" id="minifilename" placeholder="Minimap_Filename"></input>
+<input type="text" id="desc" placeholder="Description"></input>
+<button type="button" id="confirm" onclick="clicked()">Confirm</button>
+<script src="jquery-1.12.4.js"></script>
+<div id="alerter"></div>
+<script>
+    
+    
+    function clicked() {
+        var id = document.getElementById("id").value;
+        var filename = document.getElementById("filename").value;
+        var dispname = document.getElementById("dispname").value;
+        var minifilename = document.getElementById("minifilename").value;
+        var desc = document.getElementById("desc").value;
+        console.log(id+","+filename+","+dispname+","+minifilename+","+desc);
+        $("#alerter").load("addRooms.php", {id: id, filename: filename, dispname: dispname, minifilename: minifilename, desc: desc});   
+    }
+</script>
+</html>

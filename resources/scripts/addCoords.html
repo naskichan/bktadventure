@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="jquery-1.12.4.js"></script>
+    </head>
+    <input type="text" id="input" placeholder="Insert input here"></input>
+<input type="text" id="refroom" placeholder="Referring Room"></input>
+<input type="text" id="des" placeholder="Destination"></input>
+<input type="text" id="typeid" placeholder="FK_ID_Type"></input>
+<button type="button" id="confirm">Add to Database</button>
+<div id="alerter"></div>
+</html>
+<script>
+document.getElementById("confirm").onclick = function() {
+    $("#refroom").val;
+    var refroom = document.getElementById("refroom").value;
+    var string = document.getElementById("input").value;
+    var des = document.getElementById("des").value;
+    var typeid = document.getElementById("typeid").value;
+    var coords = string.split(",");
+    console.log(refroom+" : "+string+" : "+des+" : "+typeid);
+    $.get("addCoords.php", {typeid: typeid, des: des, refroom: refroom, cd1x: coords[0], cd1y: coords[1], cd2x: coords[2], cd2y: coords[3], cd3x: coords[4], cd3y: coords[5], cd4x: coords[6], cd4y: coords[7]})
+    .done( function(data) {
+        console.log(data.value);
+        $("#alerter").text(data);
+    });
+}
+</script>

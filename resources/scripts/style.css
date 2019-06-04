@@ -1,0 +1,120 @@
+body {
+    font-family: sans-serif oblique italic;
+}
+div#infotext {
+    top: 0;
+    width: 50%;
+    font-size: 18pt;
+    height: auto;
+    margin-left: 13%;
+    text-align: center;
+    margin-bottom: 1%;
+    border-width: 1px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-color: darkgrey;
+    border-radius: 4px;
+
+}
+.areas:hover {
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+	border-color: yellow;
+	border-style: solid;
+	border-width: 1px;
+}
+div#mainframe {
+    margin-left: 13%;
+    top: 15%;
+    width: 50%;
+    border-style: solid;
+    border-color: darkgrey;
+    border-width: 1px;
+    box-shadow: 1px 0 1px darkgrey;
+}
+.control {
+    position: relative;
+    margin-left: 1%;
+    float: left;
+    width: 6%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
+    border-radius: 4px;
+    margin-top: 4%;
+
+}
+.allign {
+  float: left;
+}
+div#imgframe {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+img#mainimg {
+    height: 100%;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+div#minimap {
+  position: relative;
+  width: 330px;
+
+}
+#minimap img {
+  height: 50%;
+  width: auto;
+}
+div#inventory {
+    position: relative;
+    margin: 5px;
+    width: 3.5%;
+    height: 50%;
+    margin-top: 0px;
+}
+#questwin {
+    position: relative;
+    float: left;
+    margin-left: 13%;
+    width: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-top-width: 0px;
+}
+#qname {
+    border-width: 1px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-style: solid;
+    border-color: lightgrey;
+    width: 23%;
+    float: left;
+    
+}
+.InvDiv {
+    width: auto;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+.invImg {
+    width: 100%;
+    position: relative;
+    
+    
+}
+#inventory {
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    margin-left: 2px;
+}
